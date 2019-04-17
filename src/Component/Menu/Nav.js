@@ -9,15 +9,15 @@ class Navigation extends Component {
         return (
             <Navbar bg="light" expand="lg">
                     <Container>
-                <Navbar.Brand><Link to="/"><img className="logo" src={Logo} alt="logo"/></Link></Navbar.Brand>
+                <Navbar.Brand><Link to="/home"><img className="logo" src={Logo} alt="logo"/></Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav><NavLink to="/">News</NavLink></Nav>
+                        <Nav><NavLink to="/home">News</NavLink></Nav>
                         <Nav><NavLink to="/fixtures">Fixtures</NavLink></Nav>
                         <Nav><NavLink to="/competitions">Competitions</NavLink></Nav>
                         <Nav><NavLink to="/teams">Teams</NavLink></Nav>
-                        <Nav><NavLink to="/transder">Transfer</NavLink></Nav>
+                        <Nav><NavLink to="/transfer">Transfer</NavLink></Nav>
                     </Nav>
                     <Button>Login/Sign Up</Button>
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">

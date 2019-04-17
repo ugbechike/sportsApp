@@ -1,0 +1,32 @@
+.match__logo {
+    width: 20%;
+}
+
+.match__wrapper {
+    background: #F0F1F3;
+    padding-top: 15px;
+}
+
+.match__row {
+    margin-bottom: 30px;
+
+}
+
+.match__time{
+    border-radius: 5px;
+    background: #C4C4C4;
+    text-align: center;
+    color: #000000;
+    max-width: 12% !important;
+}
+
+.match__today{
+    color: #000000;
+    font-family: Avenir Next LT Pro;
+    font-size: 18px;
+}
+
+.matches__align {
+    text-align: center;
+    padding-bottom: 15px;
+}

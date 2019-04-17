@@ -13,7 +13,7 @@ class FeaturedGame extends Component {
                 <div className="navigate">
                     <NavLink 
                     style={{borderBottom:"3px solid #FF3333", display:"block",}}
-                    to="/fixture"><span>FIXTURES</span></NavLink>
+                    to="/fixtures"><span>FIXTURES</span></NavLink>
                     <NavLink to="/highlights"><span>HIGHLIGHTS</span></NavLink>
                 </div>
                 <h4>6th, December, 2018</h4>

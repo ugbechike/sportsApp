@@ -11,7 +11,7 @@ class MatchHighLights extends Component {
         return (
             <div>
                 <div className="navigate">
-                    <NavLink to="/fixture"><span>FIXTURES</span></NavLink>
+                    <NavLink to="/fixtures"><span>FIXTURES</span></NavLink>
                     <NavLink to="/highlights"><span>HIGHLIGHTS</span></NavLink>
                 </div>
                 <h4>6th, December, 2018</h4>
