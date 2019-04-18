@@ -19,15 +19,16 @@ font-size: 16px
 }
 
 .post__wrapper {
-    margin-top: 40px;
+    margin-top: 120px;
         margin-bottom: 40px;
 
 }
 
 .Post__card {
-    height: 488px;
+    height: 480px;
     background: #F0F1F3;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
 }
 
 .post__card__image {
