@@ -6,6 +6,9 @@ import Fixture from './Component/fixture/fixture';
 import HighLights from './Component/highlights/highlights';
 import NewsContent from './Component/NewsContent/NewsContent';
 import TopLeagues from './Component/TopLeagues/TopLeagues';
+import ExploreLeagues from './Component/ExploreLeagues/ExploreLeagues';
+import Competition from './Component/Competitons/Competition';
+
 
 class Routes extends Component {
   render() {
@@ -17,7 +20,10 @@ class Routes extends Component {
           <Route path="/fixtures" component={Fixture} exact/>
           <Route path="/highlights" component={HighLights} exact/>
           <Route path='/news-content' component={NewsContent} exact />
-          <Route path="/competitions" component={TopLeagues} exact />
+          {/* <Route path="/competitions" component={TopLeagues} exact /> */}
+          <Route path="/explore-league/:id" component={ExploreLeagues} exact />
+          <Route path="/competitions" component={Competition} exact />
+
         </Switch>
         
       </div>

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import TopLeagues from '../TopLeagues/TopLeagues';
+import Ads from '../Ads/Ads';
 import Navigation from '../Menu/Nav';
 import Footer from '../Menu/footer';
-import Ads from '../Ads/Ads';
+import TopLeagues from '../TopLeagues/TopLeagues';
 import Following from '../Following/Following';
-import International from '../International/International';
+import ExtraTeam from '../ExploreLeagues/ExtraTeam';
 
+class ExploreLeagues extends Component {
 
-class Competition extends Component {
     render() {
         return (
             <div>
@@ -15,11 +15,11 @@ class Competition extends Component {
                 <Ads />
                 <TopLeagues />
                 <Following />
-                <International />
+                <ExtraTeam />
                 <Footer />
             </div>
         );
     }
 }
 
-export default Competition;
+export default ExploreLeagues;
