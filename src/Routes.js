@@ -18,7 +18,7 @@ class Routes extends Component {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/fixture" component={Fixture}/>
-          <Route path="/highlights" component={HighLights}/>
+          {/* <Route path="/highlights" component={HighLights}/> */}
           <Route path="/match-detail-commentry" component={MatchDetailCommentry}/>
           <Route path="/home" component={Home} exact />
           <Route path="/latest" component={LatestPost} exact />
