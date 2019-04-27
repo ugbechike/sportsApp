@@ -18,10 +18,11 @@ class Fixture extends Component {
     onChange = date => this.setState({ date })
 
     render() {
+        console.log('props from fixture', this.props)
         return (
             <div>
                 <Navigation />
-                <Container className="fixture__wrapper">
+                <Container  className="fixture__post-margin" >
                 <Ads />
                 <Row className="fixture__body">
                     <Col md={8}>

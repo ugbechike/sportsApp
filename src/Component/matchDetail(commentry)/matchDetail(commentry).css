@@ -4,3 +4,7 @@
     padding: 30px;
     margin-bottom: 5vh;
 }
+
+.show {
+    border-bottom: none !important;
+}

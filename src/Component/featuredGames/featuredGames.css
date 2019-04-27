@@ -3,6 +3,28 @@
     align-items: center;
     text-align: center;
 }
+
+.navigation__alignment {
+    text-align: center;
+}
+
+.comp__clubs {
+    text-align: center;
+}
+
+.comp_match__time {
+    border-radius: 5px;
+    background: #C4C4C4;
+    text-align: center;
+    color: #000000;
+    max-width: 12% !important;
+    padding: 12px;
+}
+
+.comp_feature__logo {
+    width: 52%
+}
+
 .fixture__league{
     text-align: center;
     background: #000060;

@@ -24,9 +24,19 @@ class Matches extends Component {
         return (
             this.state.map((value, index) =>(
                 <Row key={index} className="match__row">
-                    <Col xs={5} md={5}>{value.club}{value.logo}</Col>
+                    <Col xs={5} md={5}>
+                    <Row>
+                        <Col xs={8} md={8}>{value.club}</Col>
+                        <Col xs={4} md={4} className="logo__end">{value.logo}</Col>
+                    </Row>
+                    </Col>
                     <Col xs={2} md={2} className="match__time">{value.time}</Col>
-                    <Col xs={5} md={5}> {value.logo}{value.club}</Col>
+                    <Col xs={5} md={5}>
+                    <Row>
+                        <Col xs={8} md={4} className="logo__end"> {value.logo}</Col>
+                        <Col xs={4} md={8} >{value.club}</Col>
+                    </Row>
+                    </Col>
                 </Row>
             ))
         )

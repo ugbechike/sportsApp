@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Navigation from '../Menu/Nav';
-import TopTeam from '../TopTeam/TopTeam';
+// import TopTeam from '../TopTeam/TopTeam';
 import Footer from '../Menu/footer';
 import './LatestPost.css';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import Matches from '../Matches/Matches';
 import Ads from '../Ads/Ads';
 
@@ -17,6 +17,7 @@ class LatestPost extends Component {
             { id: "1", image: "", content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
             { id: "1", image: "", content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
         ],
+        
 
         timer: "9 hours ago"
     }
@@ -43,27 +44,27 @@ class LatestPost extends Component {
         return (
             <div>
                 <Navigation />
-            <Container className="latest__post-margin">
-            <Ads />
-                <Row className="latest__container">
-                    <Col xs={12} md={6} className="latest__aside">
-                        <Row>
-                            <Col xs={6} md={12}>Latest Posts</Col>
-                        </Row>
-                        <hr />
-                        {this.renderPosts()}
-                 <div className="latest__align">Load More</div>
-                    </Col>
-                    <Col xs={12} md={6}>
-                        <Matches />
-                    </Col>
-                </Row>
-                <Row>
-                <Col xs={12} md={12} >
-                 </Col>
-                </Row>
-            </Container>
-            <Footer />
+                <Container className="latest__post-margin">
+                    <Ads />
+                    <Row className="latest__container">
+                        <Col xs={12} md={6} className="latest__aside">
+                            <Row>
+                                <Col xs={6} md={12}>Latest Posts</Col>
+                            </Row>
+                            <hr />
+                            {this.renderPosts()}
+                            <div className="latest__align">Load More</div>
+                        </Col>
+                        <Col xs={12} md={6}>
+                            <Matches />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} md={12} >
+                        </Col>
+                    </Row>
+                </Container>
+                <Footer />
             </div>
         );
     }
