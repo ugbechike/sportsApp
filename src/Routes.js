@@ -13,6 +13,9 @@ import DynamicComp from './Component/DynamicComp/DynamicComp';
 import Transfer from './Component/Transfer/Transfer';
 import MoreTransferNews from './Component/MoreTransferNews/MoreTransferNews';
 import MatchPreview from './Component/MatchPreview/MatchPreview';
+import ExploreTeams from './Component/ExploreTeams/ExploreTeams';
+import CompetitionTeams from './Component/Competition(teams)/Competition(teams)';
+import DynamicCompTeams from './Component/DynamicComp(teams)/DynamicComp(teams)';
 
 
 class Routes extends Component {
@@ -37,6 +40,9 @@ class Routes extends Component {
           <Route path="/competitions" component={Competition} exact />
           <Route path="/more" component={MoreTransferNews} exact />
           <Route path="/preview" component={MatchPreview} exact />
+          <Route path="/competion-teams" component={CompetitionTeams}/>
+          <Route path="/explore-teams" component={ExploreTeams}/>
+          <Route path="/team-news/:id" component={DynamicCompTeams}/>
 
         </Switch>
         
