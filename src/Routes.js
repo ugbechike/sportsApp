@@ -10,6 +10,9 @@ import TopLeagues from './Component/TopLeagues/TopLeagues';
 import ExploreLeagues from './Component/ExploreLeagues/ExploreLeagues';
 import Competition from './Component/Competitons/Competition';
 import DynamicComp from './Component/DynamicComp/DynamicComp';
+import Transfer from './Component/Transfer/Transfer';
+import MoreTransferNews from './Component/MoreTransferNews/MoreTransferNews';
+import MatchPreview from './Component/MatchPreview/MatchPreview';
 
 
 class Routes extends Component {
@@ -26,12 +29,14 @@ class Routes extends Component {
           <Route path="/comp-news/:id" component={DynamicComp} exact />
           <Route path="/fixtures" component={Fixture} exact/>
           <Route path="/comp-fixture" component={Fixture} exact/>
-
+          <Route path="/transfer" component={Transfer} exact/>
           <Route path="/highlights" component={HighLights} exact/>
           <Route path='/news-content' component={NewsContent} exact />
           {/* <Route path="/competitions" component={TopLeagues} exact /> */}
           <Route path="/explore-league/:id" component={ExploreLeagues} exact />
           <Route path="/competitions" component={Competition} exact />
+          <Route path="/more" component={MoreTransferNews} exact />
+          <Route path="/preview" component={MatchPreview} exact />
 
         </Switch>
         
