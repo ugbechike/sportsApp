@@ -1,0 +1,16 @@
+.socialmedia__auth__img{
+    width: inherit;
+    height: 7vh;
+}
+.auth__input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid ghostwhite;
+}
+.auth__page__col{
+    margin-bottom: 10px
+}
+.auth__btn{
+    width: 50%;
+    border: none;
+}

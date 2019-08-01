@@ -13,6 +13,8 @@ import DynamicComp from './Component/DynamicComp/DynamicComp';
 import ExploreTeams from './Component/ExploreTeams/ExploreTeams';
 import CompetitionTeams from './Component/Competition(teams)/Competition(teams)';
 import DynamicCompTeams from './Component/DynamicComp(teams)/DynamicComp(teams)';
+import Login from './Component/Login/Login';
+import Signup from './Component/Signup/Signup';
 
 
 class Routes extends Component {
@@ -20,7 +22,7 @@ class Routes extends Component {
     return (
       <div>
         <Switch>
-          <Route path="/" component={Home} exact />
+          <Route path="/home" component={Home} exact />
           <Route path="/fixture" component={Fixture}/>
           {/* <Route path="/highlights" component={HighLights}/> */}
           <Route path="/match-detail-commentry" component={MatchDetailCommentry}/>
@@ -29,6 +31,8 @@ class Routes extends Component {
           <Route path="/comp-news/:id" component={DynamicComp} exact />
           <Route path="/fixtures" component={Fixture} exact/>
           <Route path="/comp-fixture" component={Fixture} exact/>
+          <Route path="/" component={Login} exact/>
+          <Route path="/auth/signup" component={Signup} exact/>
 
           <Route path="/highlights" component={HighLights} exact/>
           <Route path='/news-content' component={NewsContent} exact />
