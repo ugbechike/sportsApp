@@ -6,16 +6,18 @@ import './LatestPost.css';
 import { Container, Row, Col} from 'react-bootstrap';
 import Matches from '../Matches/Matches';
 import Ads from '../Ads/Ads';
+import ImageShape from '../../Assets/Image-Shape.png'
+
 
 
 
 class LatestPost extends Component {
     state = {
         sideContent: [
-            { id: "1", image: "", content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
-            { id: "1", image: "", content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
-            { id: "1", image: "", content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
-            { id: "1", image: "", content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
+            { id: "1", image:  <img className="post__image_main" src={ImageShape} alt ="clubs"/>, content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
+            { id: "1", image:  <img className="post__image_main" src={ImageShape} alt ="clubs"/>, content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
+            { id: "1", image:  <img className="post__image_main" src={ImageShape} alt ="clubs"/>, content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
+            { id: "1", image:  <img className="post__image_main" src={ImageShape} alt ="clubs"/>, content: "Klopp in Serie A? Liverpool boss opens up on Napoli job offer", time: "9 hours ago" },
         ],
         
 
